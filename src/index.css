@@ -17,26 +17,42 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Nova Brand Colors */
+    --primary: 220 100% 60%; /* Nova Blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 220 100% 75%;
+    --primary-dark: 220 100% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 280 100% 70%; /* Nova Purple */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 160 100% 45%; /* Nova Teal */
+    --accent-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --success: 120 100% 40%; /* Green */
+    --warning: 45 100% 55%; /* Orange */
+    --error: 0 84.2% 60.2%; /* Red */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Neutral Colors */
+    --muted: 220 10% 96%;
+    --muted-foreground: 220 10% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 100% 60%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 50%, hsl(var(--accent)) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px -1px hsl(var(--primary) / 0.1);
+    --shadow-md: 0 4px 12px -2px hsl(var(--primary) / 0.15);
+    --shadow-lg: 0 10px 25px -3px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +72,49 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222.2 84% 5%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222.2 84% 7%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222.2 84% 7%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Nova Brand Colors - Dark Mode */
+    --primary: 220 100% 65%; /* Lighter blue for dark mode */
+    --primary-foreground: 222.2 84% 5%;
+    --primary-light: 220 100% 80%;
+    --primary-dark: 220 100% 50%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 280 100% 75%; /* Lighter purple for dark mode */
+    --secondary-foreground: 222.2 84% 5%;
 
+    --accent: 160 100% 55%; /* Lighter teal for dark mode */
+    --accent-foreground: 222.2 84% 5%;
+
+    --success: 120 100% 50%;
+    --warning: 45 100% 65%;
+    --error: 0 62.8% 50%;
+
+    /* Neutral Colors - Dark Mode */
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 220 100% 65%;
+
+    /* Gradients - Dark Mode */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 50%, hsl(var(--accent)) 100%);
+
+    /* Shadows - Dark Mode */
+    --shadow-sm: 0 2px 4px -1px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 12px -2px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 10px 25px -3px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
